@@ -4,7 +4,9 @@ const app = express();
 
 // api/index.js
 app.get('/', (req, res) => {
-    res.send("Express App Responded");
+    res.json({
+        "hello": "my dear"
+    });
 })
 
 app.listen(process.env.PORT || 3000);
