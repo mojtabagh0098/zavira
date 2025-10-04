@@ -1,4 +1,9 @@
 {
+  "main": "api/index.js",
+  "scripts": {
+    "script": "node api/index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "express": "^5.1.0"
   }
