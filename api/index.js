@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const authMiddleware = require('../middleware/auth');
 
-const { swaggerUi, swaggerSpec } = require('../swagger.js');
+const { swaggerUi, swaggerSpec } = require('./swagger.js');
 // const swaggerDocument = require('../swagger.js');
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
