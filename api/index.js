@@ -101,6 +101,6 @@ app.get('/all-forms', authMiddleware, (req, res) => {
     })
 });
 
-
+app.listen(process.env.PORT || 3000);
 // api/index.js
 module.exports = app
